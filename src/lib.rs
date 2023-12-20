@@ -79,7 +79,7 @@ safe, fast, productive.
     fn case_insensitive() {
         let query = "rUsT";
         let contents = "\
-            Rust:
+    Rust:
     safe, fast, productive.
     Pick three.
 Trust me.";
