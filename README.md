@@ -2,6 +2,13 @@
 
 [![Build Status](https://travis-ci.org/your-username/nsgrep.svg?branch=main)](https://travis-ci.org/your-username/nsgrep) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
+# Example
+```bash
+
+cargo run -- Word poem.txt > output.txt
+
+```
+
 NSGrip is a Rust command-line utility that provides powerful text-searching capabilities within files. 
 
 It is designed to be fast, efficient, and easy to use. 
