@@ -65,14 +65,12 @@ NSGrep is a command-line tool. Here are some examples of how to use it:
 ```bash
 
 # Basic Usage
+# 'to' can be any argument (user input)
 
-nsgrep "search query" path/to/file.txt
-
-# Display Help
-
-nsgrep --help
+cargo run -- to poem.txt > output.txt
 
 ```
+This will output the rows of text that contain 'to' into `output.txt`
 
 For more detailed usage instructions, refer to the [Wiki](https://github.com/your-username/nsgrep/wiki).
 
