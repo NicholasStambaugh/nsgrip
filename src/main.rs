@@ -1,12 +1,16 @@
 use std::env;
 use std::fs;
+use std::process;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
 
     // Use the Config::new function to create a Config instance
-    let config = Config::new(&args);
-    
+    let config = Config::build(&args).unwrap_or_else(|err| {
+        println!("Problem parsing arguemnt: {err}");
+        process::exit(1);
+    });
+
     println!("Search for {}", config.query);
     println!("in file... {}", config.file_path);
 
@@ -22,16 +26,17 @@ struct Config {
 }
 
 impl Config {
-    // Rename the function to be more descriptive
-    fn new(args: &[String]) -> Config {
+    
+
+    fn build(args: &[String]) -> Result<Config, &'static str> {
         if args.len() < 3 {
-            panic!("not enough arguments");
+            return Err("not enough arguments");
         }
 
         // Use the fields directly instead of creating a new Config instance
         let query = args[1].clone();
         let file_path = args[2].clone();
 
-        Config { query, file_path }
+        Ok(Config { query, file_path })
     }
 }
