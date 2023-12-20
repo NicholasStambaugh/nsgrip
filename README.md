@@ -20,8 +20,6 @@ This project is under active development, and contributions are welcome!
 
 - **Text Search:** Search for a specific query within the content of files.
 
-- **Flexible Configuration:** Configure your search parameters using command-line arguments.
-
 - **Error Handling:** Graceful handling of errors to ensure a smooth user experience.
 
 - **Cross-Platform:** Works on Windows, macOS, and Linux.
