@@ -9,6 +9,7 @@ cargo run -- Word poem.txt > output.txt
 
 ```
 
+# About
 NSGrip is a Rust command-line utility that provides powerful text-searching capabilities within files. 
 
 It is designed to be fast, efficient, and easy to use. 
