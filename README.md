@@ -1,6 +1,6 @@
 # NSGrip
 
-[![Build Status](https://travis-ci.org/your-username/nsgrep.svg?branch=main)](https://travis-ci.org/your-username/nsgrep) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Build Status](https://travis-ci.org/nicholasstambaugh/nsgrip.svg?branch=master)](https://travis-ci.org/nicholasstambaugh/nsgrip) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Recreating `grep` Command-Line bash expression for native Windows/mac users.
 
