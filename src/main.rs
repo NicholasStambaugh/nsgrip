@@ -1,6 +1,7 @@
 use std::env;
 use std::fs;
 use std::process;
+use std::error::Error;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -14,10 +15,17 @@ fn main() {
     println!("Search for {}", config.query);
     println!("in file... {}", config.file_path);
 
+    run(config);
+
     // Use the fields directly from the config instance
+}
+
+fn run(config: Config) -> Result<(), Box<dyn Error>> {
     let contents = fs::read_to_string(&config.file_path).expect("Should be able to read file!");
 
     println!("With text:\n{}", contents);
+
+    Ok(())
 }
 
 struct Config {
