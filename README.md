@@ -50,7 +50,7 @@ Clone the repository:
 
 ```bash
 
-git clone https://github.com/your-username/nsgrep.git
+git clone https://github.com/nicholasstambaugh/nsgrep.git
 
 cd nsgrep
 
